@@ -40,3 +40,8 @@ textarea {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+*::selection {
+  color: white;
+  background-color: var(--main-color);
+}

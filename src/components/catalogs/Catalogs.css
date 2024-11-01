@@ -1,0 +1,27 @@
+.catalogs {
+  width: 100%;
+  padding: 0 2%;
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.catalog_item {
+  width: 128px;
+  transition: 0.3s;
+}
+
+.catalog_item:hover {
+  color: var(--main-color);
+}
+
+.catalog_item > img {
+  width: 128px;
+  height: 128px;
+}
+
+.catalog_item > p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
