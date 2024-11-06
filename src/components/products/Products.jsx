@@ -9,7 +9,7 @@ function Products() {
   return (
     <div className="products">
       {elektronika?.map((item, index) => (
-        <div className="product_item">
+        <div key={index} className="product_item">
           {item.discount > 0 && (
             <div className="product_item_discount">{item.discount}%</div>
           )}
