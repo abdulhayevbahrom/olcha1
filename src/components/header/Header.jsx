@@ -29,7 +29,9 @@ const Header = () => {
     <>
       <HeaderTop />
       <header>
+        <Link to={'/'}>
         <img src={logo} alt="" className="logo" />
+        </Link>
         <button className="catalogBtn">
           <FaBars />
           Katalog
@@ -49,7 +51,7 @@ const Header = () => {
             <FaRegHeart />
             <p>Sevimlilar</p>
           </Link>
-          <Link to={"/heart"}>
+          <Link to={"/cart"}>
             <span>0</span>
             <BsCart2 />
             <p>Savatcha</p>
