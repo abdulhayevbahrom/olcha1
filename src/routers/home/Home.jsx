@@ -6,6 +6,9 @@ import Images from "../../components/images/Images";
 import Products from "../../components/products/Products";
 import ProductWithImages from "../../productWithImages/ProductWithImages";
 import SliderCatalog from "../../components/sliderCatalog/SliderCatalog";
+import CatalogFamily from "../../components/catalogFamily/CatalogFamily";
+import AppleCard from "../../components/aplleCard/AppleCard";
+import Footer from "../../components/footer/Footer"
 
 function Home() {
   return (
@@ -25,6 +28,9 @@ function Home() {
       <SliderCatalog />
       <ProductWithImages />
       <ProductWithImages />
+      <CatalogFamily />
+      <AppleCard />
+      <Footer />
     </div>
   );
 }
