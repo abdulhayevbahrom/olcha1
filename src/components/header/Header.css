@@ -191,3 +191,11 @@ header {
 .nav_links > button {
   background-color: transparent;
 }
+
+@media (max-width :1193px) {
+  .header-top  .header_top_left_link1 {
+    display: none;
+  }
+
+    
+}
