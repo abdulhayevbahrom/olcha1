@@ -1,0 +1,298 @@
+.aplleCard {
+  width: 100%;
+  height: 990px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 48px 0 32px;
+  background-color: #f2f2f2;
+  padding-left: 1%;
+  padding-right: 1%;  
+}
+
+.aplleCard>h1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aplleCard>h1>h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.aplleCard>h1>a {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--main-color);
+}
+
+.aplleCard>.cover {
+  display: flex;
+  width: 100%;
+  height: 848px;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.aplleCard>.cover .aplleLeft {
+  width: 344px;
+  height: 848px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.product_item {
+  width: 344px;
+  height: 503px;
+  padding: 8px;
+  line-height: 7px;
+  color: #111111;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  position: relative;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.product_item_discount,
+.product_item_like,
+.product_item_compare {
+  position: absolute;
+}
+
+.product_item_discount {
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.product_item_like,
+.product_item_compare {
+  right: 20px;
+  top: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px;
+  color: #999999;
+}
+
+.product_item_compare {
+  top: 60px;
+}
+
+.product_item figure {
+  width: 100%;
+  height: 300px;
+}
+
+.product_item figure img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_item_name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1rem;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.product_item_price {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 15px;
+}
+
+.product_item_price_old {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #999999;
+  text-decoration: line-through;
+  margin-top: 15px;
+}
+
+.product_item_credit_price {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  background-color: #ffd741;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.product_item_actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+  gap: 8px;
+  padding-right: 25px;
+}
+
+.product_item_actions :where(svg, button) {
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 8px;
+}
+
+.product_item_actions svg {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.product_item_actions svg:hover {
+  background-color: rgba(8, 8, 8, 0.046);
+}
+
+.product_item_actions button {
+  background-color: transparent;
+  flex: 1;
+  height: 40px;
+  color: var(--main-color);
+  border-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.product_item_actions button:hover {
+  background-color: rgba(220, 20, 60, 0.046);
+}
+
+.aplleCard .aplleLeft .aplleCardBottom {
+  width: 344px;
+  height: 204px;
+  margin-top: 100px;
+  display: flex;
+  margin-left: -8px;
+  background-color: #fff;
+  padding-top: 3%;
+  border-radius: 12px;
+}
+
+.aplleCard .aplleLeft .aplleCardBottom>img {
+  width: 120px;
+  height: 120px;
+}
+
+.aplleCard .aplleLeft .aplleCardBottom .rightCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.aplleCard .aplleLeft .aplleCardBottom .rightCard>h2 {
+  line-height: 1.4;
+  text-align: center;
+}
+
+.aplleCard .aplleLeft .aplleCardBottom .rightCard>p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.aplleCard .aplleLeft .aplleCardBottom .rightCard>h3 {
+  padding: 8px;
+  background-color: yellow;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.aplleCard .aplleRight {
+  width: 1065px;
+  height: 848px;
+}
+
+.aplleCard .aplleRight > .appleTop {
+  width: 1065px;
+  height: 276px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aplleCard .aplleRight > .appleTop > .appleTopLeft {
+  width: 517px;
+  height: 276px;
+  border-radius: 12px;
+}
+
+.aplleCard .aplleRight > .appleTop > .appleTopLeft > video {
+  width: 100%;
+  height: 100%;
+}
+
+.aplleCard .aplleRight > .appleTop > .appleTopRight {
+  width: 517px;
+  display: flex;
+  height: 276px;
+  padding-top: 1%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding-left: 1%;
+  overflow: hidden;
+}
+
+
+.aplleCard .aplleRight .appleTopRight > img {
+  width: 200px;
+  height: 200px;
+}
+
+.aplleCard .aplleRight .appleTopRight  .rightCardTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.aplleCard .aplleRight .appleTopRight  .rightCardTop > .titleA {
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 700;
+  text-align: left;
+}
+
+.aplleCard .aplleRight .appleTopRight  .rightCardTop > .priceA {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-left: -180px;
+  }
+
+.aplleCard .aplleRight .appleTopRight  .rightCardTop>h3 {
+  padding: 5px;
+  background-color: yellow;
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: left; 
+  margin-left: -100px;
+}
+
+.aplleCard .aplleRight .appleBottom {
+}

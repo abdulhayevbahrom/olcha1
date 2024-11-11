@@ -13,24 +13,24 @@ import Footer from "../../components/footer/Footer"
 function Home() {
   return (
     <div className="home">
-      <Banner />
-      <Catalogs />
-      <Images />
-      <Products />
-      <Products />
-      <ProductWithImages />
-      <SliderCatalog />
-      <ProductWithImages />
-      <SliderCatalog />
-      <ProductWithImages />
-      <SliderCatalog />
-      <ProductWithImages />
-      <SliderCatalog />
-      <ProductWithImages />
-      <ProductWithImages />
-      <CatalogFamily />
-      <AppleCard />
-      <Footer />
+      {/* <Banner /> */}
+      {/* <Catalogs /> */}
+      {/* <Images /> */}
+      {/* <Products /> */}
+      {/* <Products /> */}
+      {/* <ProductWithImages /> */}
+      {/* <SliderCatalog /> */}
+      {/* <ProductWithImages /> */}
+      {/* <SliderCatalog /> */}
+      {/* <ProductWithImages /> */}
+      {/* <SliderCatalog /> */}
+      {/* <ProductWithImages /> */}
+      {/* <SliderCatalog /> */}
+      {/* <ProductWithImages /> */}
+      {/* <ProductWithImages /> */}
+      {/* <CatalogFamily /> */}
+      {/* <AppleCard /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
