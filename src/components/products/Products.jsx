@@ -4,10 +4,13 @@ import { elektronika } from "../../data/product";
 import { FaRegHeart } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
 import { BsCart2 } from "react-icons/bs";
+import Installment_payment from "../../routers/installment_payment/Installment_payment";
 
 function Products() {
+  const [show, setShow] = React.useState(false);
   return (
     <div className="products">
+      {show && <Installment_payment data={show} setShow={setShow} />}
       {elektronika?.map((item, index) => (
         <div key={index} className="product_item">
           {item.discount > 0 && (
@@ -36,7 +39,7 @@ function Products() {
             {Math.round(item.price / 12)} so'm x 12 oy{" "}
           </p>
           <div className="product_item_actions">
-            <BsCart2 />
+            <BsCart2 onClick={() => setShow(item)} />
             <button>Muddatli to'lov</button>
           </div>
         </div>

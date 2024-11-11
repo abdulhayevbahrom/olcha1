@@ -8,7 +8,7 @@ function AppleCard() {
   return (
     <div className="aplleCard">
       <h1>
-        <h2>Aplle texnikasi</h2> <a href="/">Barchasini korish ></a>
+        <h2>Aplle texnikasi</h2> <a href="/">Barchasini korish </a>
       </h1>
       <div className="cover">
         <div className="aplleLeft">

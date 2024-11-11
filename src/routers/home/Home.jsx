@@ -25,16 +25,6 @@ function Home() {
       <SliderCatalog />
       <ProductWithImages />
       <Products_witdh_for />
-      <SliderCatalog />
-      <ProductWithImages />
-      <SliderCatalog />
-      <ProductWithImages />
-      <SliderCatalog />
-      <ProductWithImages />
-      <ProductWithImages />
-      <CatalogFamily />
-      <AppleCard />
-      <Footer />
     </div>
   );
 }
