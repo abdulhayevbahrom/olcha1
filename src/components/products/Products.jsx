@@ -4,6 +4,7 @@ import { elektronika } from "../../data/product";
 import { FaRegHeart } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
 import { BsCart2 } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (

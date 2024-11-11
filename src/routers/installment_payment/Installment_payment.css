@@ -1,0 +1,14 @@
+.installment_payment {
+    width: 1440px;
+    height: 100vh;
+    padding: 0 32px;
+    background-color: #00000015;
+    display: flex;
+    justify-content: center;
+}
+
+.installment_payment_old {
+    width: 1063px;
+    height: 100%;
+    background-color: #fff;
+}

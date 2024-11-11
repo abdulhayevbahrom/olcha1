@@ -6,6 +6,7 @@ import Images from "../../components/images/Images";
 import Products from "../../components/products/Products";
 import Products_witdh from "../../components/products_witdh/Products_witdh";
 import Products_witdh_for from "../../components/products_witdh_for/Products_witdh_for";
+import Installment_payment from "../installment_payment/Installment_payment";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Products />
       <Products_witdh />
       <Products_witdh_for />
+      <Installment_payment />
     </div>
   );
 }
