@@ -1,0 +1,22 @@
+.products_witdh_for {
+    width: 100%;
+    height: 100vh;
+    /* background-color: dodgerblue; */
+}
+
+.products_witdh_for div {
+    width: 100%;
+    height: 102px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.products_witdh_for div img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.products_witdh_for img:hover {
+    transform: scale(1.06);
+    width: 100%;
+}

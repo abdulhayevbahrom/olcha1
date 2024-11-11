@@ -123,3 +123,60 @@ export const elektronika = [
     discount: 15,
   },
 ];
+export const elektronikalar = [
+  {
+    id: 1,
+    name: "Akkumulyator Delkor 60 Ah",
+    price: 946050,
+    images: [
+      "https://olcha.uz/image/266x355/products/cdn_1/supplier/stores/1/2024-09-10/0aIc5uCTEjlkVhru8e6kHPMTyx497HMbGN57xI9DuWczhOne6UGpF74ZDdUL.jpg",
+    ],
+    brend: "SONY",
+    color: "oq",
+    discount: 15,
+  },
+  {
+    id: 2,
+    name: "Xiaomi Redmi 14C",
+    price: 1950021,
+    images: [
+      "https://olcha.uz/image/266x355/products/cdn_1/supplier/stores/1/2024-09-10/ysEUZvg7k6KeEb5uhMmr2NPEubRTbWerFuyBK5u9WOtu7fwk7oKc2cCXE7Bt.jpg",
+    ],
+    brend: "REDMI",
+    color: "xar xil",
+    discount: 0,
+  },
+  {
+    id: 3,
+    name: "Apple iPhone 15 Pro",
+    price: 14716975,
+    images: [
+      "https://olcha.uz/image/266x355/products/cdn_1/supplier/stores/1/2024-09-10/Fcs9SIDzEQCHrmIZdKRZA3QPeUCJY0fwnkL1XcAJ5LhV5Ldtkwlgz1CPWQr1.jpg",
+    ],
+    brend: "APLLE",
+    color: " 😮‍💨",
+    discount: 15,
+  },
+  {
+    id: 4,
+    name: "Samsung Galaxy A15",
+    price: 2376100,
+    images: [
+      "https://olcha.uz/image/266x355/products/cdn_1/supplier/stores/1/2024-09-10/C9cI4kvEtoWMDNA34ncJVJsVcKZZBOkgRHAFUO3mYEjly0V8esHezQr3c9Fp.jpg",
+    ],
+    brend: "SAMSUNG",
+    color: "🤣",
+    discount: 9,
+  },
+  {
+    id: 5,
+    name: "Xiaomi Redmi Note 13",
+    price: 2850000,
+    images: [
+      "https://olcha.uz/image/266x355/products/cdn_1/supplier/stores/1/2024-09-10/UDUkwqXphdBOJBhnvkADmyrSUpVr0e8oxeAyjhJGEJtH8ADhYQC3jPVtfwE1.jpg",
+    ],
+    brend: "REDMI",
+    color: "xar xil",
+    discount: 15,
+  },
+];
