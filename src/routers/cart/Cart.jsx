@@ -16,7 +16,7 @@ function Cart() {
         <h2>Savatchangiz bo'sh</h2>
         <p>Lekin siz uni har doim to'ldirishingiz mumkin</p>
         <Link to={"/"}>
-          <button className="hom">Asosiy sahifaga</button>
+        <button className="hom">Asosiy sahifaga</button>
         </Link>
       </div> */}
 
@@ -30,27 +30,6 @@ function Cart() {
                 <img src="https://olcha.uz/image/original/products/cdn_1/supplier/stores/1/2024-10-28/2LuMm7dzhQZaMZaIEQnJsH7wj3AqG0vt6OJsI1Fy7wAlhVbpcMH6CZrwVm4N.jpg" alt="" />
                 <div className="cart_lorme">
                   <Link className="oyin_konsoli">Simsiz minigarnituralar LX 10 Qora</Link>
-                  <p style={{ color: "#999", }}>Audio Magaza</p>
-                  {/* <div style={{ display: "flex", color: "#999", }}>
-                    <img className="dubai" src="https://olcha.uz/image/original/delivery-locations/MnUZSxy2v00wdWE672r1TYUDsqXU5N5rU5QOX96d.png" alt="" />
-                    <p>Dubaydan</p>
-                  </div> */}
-                  <Link className="sevimlilar">Sevimlilarga qo'shish <p>|</p> Oʻchirish</Link>
-                </div>
-              </div>
-              <div className="right">
-                <button><FiMinus /><p>1</p><FiPlus /></button>
-                <div>
-                  <b>195 000 so'm</b>
-                  <p>215 000 so'm</p>
-                </div>
-              </div>
-            </div>
-            <div className="cart_d">
-              <div className="left">
-                <img src="https://olcha.uz/image/original/products/cdn_1/supplier/stores/1/2024-10-28/yCNAyMh8Kgqp5AJ83ItMlhrNf1mvVCgVx1cdWtP7X94tF2vapIP72lyExJlF.jpg" alt="" />
-                <div className="cart_lorme">
-                  <Link className="oyin_konsoli">Simsiz minigarnituralar LX 10 Oq</Link>
                   <p style={{ color: "#999", }}>Audio Magaza</p>
                   {/* <div style={{ display: "flex", color: "#999", }}>
                     <img className="dubai" src="https://olcha.uz/image/original/delivery-locations/MnUZSxy2v00wdWE672r1TYUDsqXU5N5rU5QOX96d.png" alt="" />
@@ -102,7 +81,7 @@ function Cart() {
         <button>Buyurtma berish</button>
         <p className="shartnoma">"Buyurtma berish" tugmasi bosish orqali <span> ommaviy taklif shartnomasiga</span> roziman</p>
       </div>
-    </div>
+    </div >
   );
 }
 

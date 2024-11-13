@@ -11,4 +11,85 @@
     width: 1063px;
     height: 100%;
     background-color: #fff;
+    padding: 32px;
+    border-radius: 12px;
+}
+
+.installment_payment_old .taklif {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    gap: 24px;
+    margin-top: 40px;
+    color: #da002b;
+    font-weight: 550;
+}
+
+.installment_payment_old .taqqos svg {
+    color: #000;
+}
+
+.installment_payment_old .taklif svg {
+    height: 16px;
+    margin-right: 5px;
+}
+
+.installment_payment_old .left .left_bigimg {
+    width: 466px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.installment_payment_old .left > div img {
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.installment_payment_old .left > div img:first-child {
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    border: 2px solid #da002b;
+    margin-left: 60px;
+}
+
+.installment_payment_old .right {
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+.installment_payment_old .right h1 {
+    font-size: 24px;
+}
+
+.installment_payment_old .right p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 16px;
+}
+
+.installment_payment_old .right .rangi img {
+    width: 85px;
+    height: 89px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 3px;
+    margin-right: 10px;
+}
+
+.installment_payment_old .right .xotira {
+    margin-top: 20px;
+}
+
+.installment_payment_old .right .xotira button {
+    width: 107px;
+    height: 40px;
+    border: 2px solid;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 550;
 }
