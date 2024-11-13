@@ -1,15 +1,21 @@
-import React from 'react';
+import React from "react";
 import "./Installment_payment.css";
-import { IoStatsChart } from 'react-icons/io5';
-import { FaRegHeart } from 'react-icons/fa';
+import { IoStatsChart } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
 import { LiaShareSolid } from "react-icons/lia";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { FiX } from "react-icons/fi";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../context/cartSlice";
 
-function Installment_payment() {
+function Installment_payment({ data, setShow }) {
+    const dispatch = useDispatch();
+
     return (
         <div className='installment_payment'>
             <div className="installment_payment_old">
-                <h1>Xiaomi Redmi 14C</h1>
+                <FiX onClick={() => setShow(false)} />
+                <h1>{data.name}</h1>
                 <div className='taklif'>
                     <Link className='taqqos'>
                         <IoStatsChart />
@@ -47,11 +53,14 @@ function Installment_payment() {
                             <button>6/128 GB</button>
                             <button>8/256 GB</button>
                         </div>
+                        <button onClick={() => dispatch(addToCart(data))}>
+                            Savatga qo'shish
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Installment_payment;

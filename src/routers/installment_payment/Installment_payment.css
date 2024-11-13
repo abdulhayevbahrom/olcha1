@@ -1,10 +1,18 @@
 .installment_payment {
-    width: 1440px;
+    width: 100%;
     height: 100vh;
     padding: 0 32px;
-    background-color: #00000015;
+    background-color: #00000087;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    img {
+        width: 100px;
+    }
 }
 
 .installment_payment_old {
@@ -40,14 +48,14 @@
     margin-top: 30px;
 }
 
-.installment_payment_old .left > div img {
+.installment_payment_old .left>div img {
     width: 72px;
     height: 72px;
     border-radius: 12px;
     margin-top: 20px;
 }
 
-.installment_payment_old .left > div img:first-child {
+.installment_payment_old .left>div img:first-child {
     width: 72px;
     height: 72px;
     border-radius: 12px;
