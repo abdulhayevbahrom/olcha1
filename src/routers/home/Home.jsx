@@ -7,10 +7,9 @@ import Products from "../../components/products/Products";
 import ProductWithImages from "../../productWithImages/ProductWithImages";
 import SliderCatalog from "../../components/sliderCatalog/SliderCatalog";
 import CatalogFamily from "../../components/catalogFamily/CatalogFamily";
-import AppleCard from "../../components/aplleCard/AppleCard";
 import Footer from "../../components/footer/Footer";
-import Products_witdh from "../../components/products_witdh/Products_witdh";
-import Products_witdh_for from "../../components/products_witdh_for/Products_witdh_for";
+import ProductsWitdh from "../../components/products_witdh/Products_witdh";
+import ProductsWitdhFor from "../../components/products_witdh_for/Products_witdh_for";
 
 function Home() {
   return (
@@ -20,12 +19,12 @@ function Home() {
       <Images />
       <Products />
       <Products />
-      <Products_witdh />
+      <ProductsWitdh />
       <ProductWithImages />
       <SliderCatalog />
       <CatalogFamily />
       <ProductWithImages />
-      <Products_witdh_for />
+      <ProductsWitdhFor />
       <Footer />
     </div>
   );

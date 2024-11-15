@@ -10,8 +10,13 @@ import { FaRegHeart } from "react-icons/fa";
 import { BsCart2 } from "react-icons/bs";
 import { LuUser2 } from "react-icons/lu";
 import { useTypewriter } from "react-simple-typewriter";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const heartData = useSelector((state) => state.heart);
+  const cartData = useSelector((state) => state.cart);
+  const compareData = useSelector((state) => state.compare);
+
   const [text] = useTypewriter({
     words: [
       "Televizor",
@@ -29,8 +34,8 @@ const Header = () => {
     <>
       <HeaderTop />
       <header>
-        <Link to={'/'}>
-        <img src={logo} alt="" className="logo" />
+        <Link to={"/"}>
+          <img src={logo} alt="" className="logo" />
         </Link>
         <button className="catalogBtn">
           <FaBars />
@@ -44,15 +49,17 @@ const Header = () => {
         </div>
         <div className="nav_links">
           <Link to={"/compare"}>
+            {compareData.length ? <span>{compareData.length}</span> : ""}
             <IoStatsChart />
             <p>Taqqoslash</p>
           </Link>
           <Link to={"/heart"}>
+            {heartData.length ? <span>{heartData.length}</span> : ""}
             <FaRegHeart />
             <p>Sevimlilar</p>
           </Link>
           <Link to={"/cart"}>
-            <span>0</span>
+            <span>{cartData.length}</span>
             <BsCart2 />
             <p>Savatcha</p>
           </Link>

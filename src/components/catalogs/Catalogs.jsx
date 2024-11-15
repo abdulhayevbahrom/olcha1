@@ -115,7 +115,7 @@ function Catalogs() {
     {
       id: 23,
       img: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/Hkq1VNk2xXNORQ17hf2DdCTcix59JdQgR3SfdXEiUJlfCEzzLlImQ3JbIxBh.png",
-      title: "Oziq ovqat maxsulotlari"
+      title: "Oziq ovqat maxsulotlari",
     },
   ];
   return (
@@ -128,8 +128,8 @@ function Catalogs() {
         className="mySwiper"
       >
         {catalogsData.map((item, index) => (
-          <SwiperSlide>
-            <div key={index} className="catalog_item">
+          <SwiperSlide key={index}>
+            <div className="catalog_item">
               <img src={item.img} alt="img" />
               <p>{item.title}</p>
             </div>

@@ -1,51 +1,20 @@
-import React, { useState } from 'react';
-import "./Produtcs_witdh.css"
+import React from "react";
+import "./Produtcs_witdh.css";
 import { elektronikalar } from "../../data/product";
-import { FaRegHeart } from 'react-icons/fa';
-import { IoStatsChart } from 'react-icons/io5';
-import { BsCart2 } from 'react-icons/bs';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-// import { Pagination, Navigation } from 'swiper/modules';
+import { FaRegHeart } from "react-icons/fa";
+import { IoStatsChart } from "react-icons/io5";
+import { BsCart2 } from "react-icons/bs";
 
 function Products_witdh() {
-  // const [swiperRef, setSwiperRef] = useState(null);
-  // let appendNumber = 4;
-  // let prependNumber = 1;
-  // const prepend2 = () => {
-  //   swiperRef.prependSlide([
-  //     '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-  //     '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-  //   ]);
-  // };
-
-  // const prepend = () => {
-  //   swiperRef.prependSlide(
-  //     '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-  //   );
-  // };
-
-  // const append = () => {
-  //   swiperRef.appendSlide(
-  //     '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-  //   );
-  // };
-
-  // const append2 = () => {
-  //   swiperRef.appendSlide([
-  //     '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-  //     '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-  //   ]);
-  // };
   return (
     <div>
-      <div className='products_witdh'>
+      <div className="products_witdh">
         {elektronikalar?.map((item, index) => (
-          <div className="products_witdh_item">
+          <div key={index} className="products_witdh_item">
             {item.discount > 0 && (
-              <div className="product_witdh_item_discount">{item.discount}%</div>
+              <div className="product_witdh_item_discount">
+                {item.discount}%
+              </div>
             )}
             <button className="products_witdh_item_like">
               <FaRegHeart />
@@ -64,7 +33,9 @@ function Products_witdh() {
               {item.price} so'm{" "}
             </p>
             {item.discount > 0 && (
-              <p className="products_witdh_item_price_old">{item.price} so'm </p>
+              <p className="products_witdh_item_price_old">
+                {item.price} so'm{" "}
+              </p>
             )}
             <p className="products_witdh_item_credit_price">
               {Math.round(item.price / 12)} so'm x 12 oy{" "}
@@ -75,9 +46,12 @@ function Products_witdh() {
             </div>
           </div>
         ))}
-        <img src="https://olcha.uz/image/272x444/homePage/cdn_1/2024-10-21/l8PPzsrJpBNpjXe7ddr8p4tzDwYpSzz2rywiHn29ljRm2CqXBCvHZU52kdly.jpg" alt="" />
+        <img
+          src="https://olcha.uz/image/272x444/homePage/cdn_1/2024-10-21/l8PPzsrJpBNpjXe7ddr8p4tzDwYpSzz2rywiHn29ljRm2CqXBCvHZU52kdly.jpg"
+          alt=""
+        />
       </div>
-      
+
       {/* <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={3}
@@ -148,7 +122,7 @@ function Products_witdh() {
         </button>
       </p> */}
     </div>
-  )
+  );
 }
 
 export default Products_witdh;
