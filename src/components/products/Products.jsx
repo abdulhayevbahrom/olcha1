@@ -5,9 +5,12 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
 import { BsCart2 } from "react-icons/bs";
 import Installment_payment from "../../routers/installment_payment/Installment_payment";
+import { useDispatch } from "react-redux";
+import { addToCompare } from "../../context/compareSlice";
 
 function Products() {
   const [show, setShow] = React.useState(false);
+  const dispatch = useDispatch()
   return (
     <div className="products">
       {show && <Installment_payment data={show} setShow={setShow} />}
@@ -19,7 +22,7 @@ function Products() {
           <button className="product_item_like">
             <FaRegHeart />
           </button>
-          <button className="product_item_compare">
+          <button className="product_item_compare" onClick={() => dispatch(addToCompare(item))}>
             <IoStatsChart />
           </button>
           <figure>

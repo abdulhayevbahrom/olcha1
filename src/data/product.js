@@ -178,7 +178,7 @@ export const elektronikalar = [
     brend: "REDMI",
     color: "xar xil",
     discount: 15,
-  },
+  }, 
 ];
 export const sevimlilar = [
   {

@@ -1,42 +1,131 @@
 .compare {
-    width: 100%;
-    height: 79vh;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.compare h1 {
-    font-size: 42px;
-    color: #111;
-    font-weight: 550;
+.compare_empty {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.compare .compare_item {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.compare_empty img {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
-.compare .compare_item h2 {
-    font-size: 24px;
-    font-weight: 560;
+.compare_empty h2 {
+  font-size: 24px;
+  color: #333;
 }
 
-.compare .compare_item button {
-    width: 152px;
-    height: 47px;
-    padding: 10px 17px;
-    border-radius: 10px;
-    background-color: #c40027;
-    color: #fff;
-    font-size: 16px;
-    transition: 0.3s;
+.compare_empty p {
+  color: #666;
 }
 
-.compare .compare_item button:hover {
-    background-color: #fff;
-    color: #c40027;
-    border: 2px solid #c40027;
+.compare_empty button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.compare_empty button:hover {
+  background-color: #0056b3;
+}
+
+.compare_list {
+  padding: 20px;
+}
+
+.compare_list h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.clear_button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.clear_button:hover {
+  background-color: #c0392b;
+}
+
+.compare_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.compare_item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.compare_item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item_details {
+  margin-top: 10px;
+}
+
+.item_details h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item_details p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.item_details button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.item_details button:hover {
+  background-color: #2980b9;
+}
+
+/* Trash Icon */
+.compare_item a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.compare_item a:hover {
+  color: #c0392b;
 }

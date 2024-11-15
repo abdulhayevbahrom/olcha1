@@ -23,8 +23,10 @@ function Home() {
       <Products_witdh />
       <ProductWithImages />
       <SliderCatalog />
+      <CatalogFamily />
       <ProductWithImages />
       <Products_witdh_for />
+      <Footer />
     </div>
   );
 }
