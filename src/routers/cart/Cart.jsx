@@ -6,12 +6,7 @@ import { FiPlus } from "react-icons/fi";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  removeFromCart,
-  increment,
-  decrement,
-  clearCart,
-} from "../../context/cartSlice";
+import { removeFromCart, increment, decrement, clearCart } from "../../context/cartSlice";
 import { NumberFormat } from "../../hook/numberFormat";
 
 function Cart() {
@@ -80,7 +75,7 @@ function Cart() {
                         <p>
                           {NumberFormat(
                             item?.price + (item?.price % 10) ||
-                              item?.narxi + (item?.narxi % 10)
+                            item?.narxi + (item?.narxi % 10)
                           )}{" "}
                           so'm
                         </p>

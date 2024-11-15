@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Products.css";
 import { elektronika } from "../../data/product";
 import { FaRegHeart } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
 import { BsCart2 } from "react-icons/bs";
 import Installment_payment from "../../routers/installment_payment/Installment_payment";
+import { useDispatch } from "react-redux";
+import { addToHeart } from "../../context/heartSlise";
 
 function Products() {
   const [show, setShow] = React.useState(false);
+  const dispatch = useDispatch();
+
   return (
     <div className="products">
       {show && <Installment_payment data={show} setShow={setShow} />}
@@ -16,7 +20,7 @@ function Products() {
           {item.discount > 0 && (
             <div className="product_item_discount">{item.discount}%</div>
           )}
-          <button className="product_item_like">
+          <button onClick={() => dispatch(addToHeart(item))} className="product_item_like">
             <FaRegHeart />
           </button>
           <button className="product_item_compare">

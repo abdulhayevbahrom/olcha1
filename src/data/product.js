@@ -180,27 +180,3 @@ export const elektronikalar = [
     discount: 15,
   },
 ];
-export const sevimlilar = [
-  {
-    id: 1,
-    name: "Simsiz minigarnituralar LX 10 Oq",
-    price: 946050,
-    images: [
-      "https://olcha.uz/image/220x220/products/cdn_1/supplier/stores/1/2024-10-28/2LuMm7dzhQZaMZaIEQnJsH7wj3AqG0vt6OJsI1Fy7wAlhVbpcMH6CZrwVm4N.jpg",
-    ],
-    brend: "SONY",
-    color: "oq",
-    discount: 10,
-  },
-  {
-    id: 2,
-    name: "Simsiz minigarnituralar LX 10 Qo",
-    price: 1950021,
-    images: [
-      "https://olcha.uz/image/220x220/products/cdn_1/supplier/stores/1/2024-10-28/yCNAyMh8Kgqp5AJ83ItMlhrNf1mvVCgVx1cdWtP7X94tF2vapIP72lyExJlF.jpg",
-    ],
-    brend: "REDMI",
-    color: "xar xil",
-    discount: 10,
-  },
-];
